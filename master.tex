@@ -1,0 +1,29 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman]{babel}
+\usepackage{graphicx}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot[C]{\tiny\textit{Dieser Gottesdienstablauf wurde mit GD\LaTeX (https://https://github.com/byjmvi/gdlatex.git von git@jmvi.de) erstellt}}
+%\usepackage{multicol}
+%\usepackage{textcomp}
+\usepackage{footnote}
+%\usepackage{xcolor}
+\usepackage[a4paper, left=2.5cm, right=2.5cm, top=2.5cm]{geometry}
+\usepackage{setspace}
+
+\renewcommand{\thesection}{\Roman{section}} 
+\renewcommand{\thesubsection}{\thesection.\Roman{subsection}}
+
+\input{gd.tex}
+\input{fassungen.tex}
+
+\begin{document}
+	\thispagestyle{fancy}
+	
+	
+	\MakeAblauf
+	%\kVAblauf
+	\langFassung
+\end{document}
